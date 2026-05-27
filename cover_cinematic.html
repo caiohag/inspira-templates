@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/caiohag/inspira-templates/main/_base.css">
+<style>
+.bg-photo {
+  position: absolute; inset: 0;
+  background-image: url('{{image}}');
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,.15) 55%,
+    rgba(0,0,0,.70) 100%);
+}
+.logo-top { position: absolute; top: 60px; right: 60px; }
+.head {
+  position: absolute;
+  left: 80px; right: 80px;
+  bottom: 240px;
+}
+.head .l1 { display: block; margin-bottom: 28px; }
+.head .l2 { display: block; }
+.cta { position: absolute; right: 80px; bottom: 80px; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="bg-photo"></div>
+  <div class="overlay"></div>
+  <div class="logo-top">
+    <div class="logo logo--light">
+      <span class="mark"></span><span class="word">Inspira</span>
+    </div>
+  </div>
+  <div class="head">
+    <span class="l1 h-serif h-1 h-white">{{headline}}</span>
+    <span class="l2 h-serif h-1 h-pessego">{{highlight}}</span>
+  </div>
+  <div class="cta cta-pass">
+    <span class="lbl">Passe para o lado!</span>
+    <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5 32 C 35 24, 75 38, 115 30 C 145 24, 165 28, 185 32"
+            stroke="#F5B89E" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <path d="M163 16 L 192 32 L 163 48"
+            stroke="#F5B89E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>
+  </div>
+</div>
+</body>
+</html>

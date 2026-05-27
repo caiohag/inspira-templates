@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/caiohag/inspira-templates/main/_base.css">
+<style>
+.text-top {
+  position: absolute;
+  left: 90px; right: 90px; top: 120px;
+}
+.photo-wrap {
+  position: absolute;
+  left: 50%;
+  bottom: 200px;
+  transform: translateX(-50%);
+  width: 860px;
+  height: 605px;
+}
+.photo-wrap .photo-card { width: 100%; height: 100%; padding: 28px; }
+.logo-bot {
+  position: absolute;
+  left: 50%; bottom: 80px;
+  transform: translateX(-50%);
+}
+.cta { position: absolute; right: 60px; bottom: 30px; }
+</style>
+</head>
+<body>
+<div class="canvas stripes-creme">
+  <div class="text-top">
+    <span class="h-serif h-2">{{text_top}}</span>
+  </div>
+  <div class="photo-wrap">
+    <div class="photo-card">
+      <div class="photo" style="background-image: url('{{image}}');"></div>
+    </div>
+  </div>
+  <div class="logo-bot">
+    <div class="logo">
+      <span class="mark"></span><span class="word">Inspira</span>
+    </div>
+  </div>
+  <div class="cta cta-pass">
+    <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5 32 C 35 24, 75 38, 115 30 C 145 24, 165 28, 185 32"
+            stroke="#F5B89E" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <path d="M163 16 L 192 32 L 163 48"
+            stroke="#F5B89E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>
+  </div>
+</div>
+</body>
+</html>

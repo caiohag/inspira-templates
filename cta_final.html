@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/caiohag/inspira-templates/main/_base.css">
+<style>
+.photo-wrap {
+  position: absolute;
+  left: 50%; top: 120px;
+  transform: translateX(-50%);
+  width: 720px;
+  height: 480px;
+}
+.photo-wrap .photo-card { width: 100%; height: 100%; padding: 22px; }
+.head {
+  position: absolute;
+  left: 90px; right: 90px;
+  top: 720px;
+}
+.head .l1 {
+  display: block;
+  font-family: var(--serif);
+  font-size: 88px;
+  line-height: 1;
+  color: var(--vinho);
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+}
+.head .sub {
+  display: block;
+  font-family: var(--sans);
+  font-size: 32px;
+  color: var(--vinho);
+  line-height: 1.4;
+  font-weight: 400;
+}
+.wpp {
+  position: absolute;
+  left: 90px; bottom: 160px;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 44px;
+  background: var(--vinho);
+  color: var(--creme);
+  border-radius: 999px;
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 30px;
+}
+.wpp svg { width: 32px; height: 32px; }
+.logo-bot {
+  position: absolute;
+  right: 90px; bottom: 100px;
+}
+</style>
+</head>
+<body>
+<div class="canvas stripes-pessego">
+  <div class="photo-wrap">
+    <div class="photo-card">
+      <div class="photo" style="background-image: url('{{image}}');"></div>
+    </div>
+  </div>
+  <div class="head">
+    <span class="l1">{{cta_headline}}</span>
+    <span class="sub">{{cta_subtext}}</span>
+  </div>
+  <div class="wpp">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.23 8.23z"/>
+    </svg>
+    {{whatsapp}}
+  </div>
+  <div class="logo-bot">
+    <div class="logo">
+      <span class="mark"></span><span class="word">Inspira</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

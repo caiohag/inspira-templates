@@ -1,0 +1,119 @@
+/* Inspira Musicas — Sistema Editorial
+   Variaveis e classes compartilhadas entre todos os templates.
+   Cada template inclui este CSS via <link> ou inline. */
+
+:root {
+  --vinho: #5C2A1F;
+  --pessego: #F5B89E;
+  --pessego-soft: #FAD9C9;
+  --creme: #FDF8F0;
+  --creme-warm: #F7EFE0;
+  --verde: #E8EDD9;
+  --verde-soft: #F0F2E5;
+  --branco: #FFFFFF;
+  --serif: 'Instrument Serif', serif;
+  --sans: 'DM Sans', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 1080px;
+  height: 1350px;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--sans);
+}
+
+.canvas {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Fundos listrados (StripeBackground) */
+.stripes-creme   { background: repeating-linear-gradient(90deg, #FDF8F0 0 5.55%, #F7EFE0 5.55% 11.11%); }
+.stripes-verde   { background: repeating-linear-gradient(90deg, #E8EDD9 0 5.55%, #F0F2E5 5.55% 11.11%); }
+.stripes-pessego { background: repeating-linear-gradient(90deg, #F5B89E 0 5.55%, #FAD9C9 5.55% 11.11%); }
+
+/* PhotoCard */
+.photo-card {
+  background: #fff;
+  padding: 24px;
+  box-shadow:
+    0 30px 60px -10px rgba(0,0,0,.32),
+    0 12px 30px -8px rgba(0,0,0,.22);
+  transform: rotate(-3deg);
+  position: relative;
+  display: inline-block;
+}
+.photo-card .photo {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+/* Tipografia */
+.h-serif {
+  font-family: var(--serif);
+  font-weight: 400;
+  color: var(--vinho);
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+.h-1 { font-size: 92px; }
+.h-2 { font-size: 84px; line-height: 1.1; }
+.h-3 { font-size: 72px; line-height: 1.12; }
+.h-white   { color: #fff; }
+.h-pessego { color: var(--pessego); }
+
+/* Logo */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo .mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--vinho);
+  position: relative;
+}
+.logo .mark::before {
+  content: '';
+  position: absolute;
+  inset: 30%;
+  background: var(--pessego);
+  border-radius: 50%;
+}
+.logo .word {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 32px;
+  color: var(--vinho);
+}
+.logo--light .mark { background: #fff; }
+.logo--light .mark::before { background: var(--pessego); }
+.logo--light .word { color: #fff; }
+
+/* CTA "Passe pro lado" */
+.cta-pass {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  color: var(--pessego);
+}
+.cta-pass .lbl {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 28px;
+}
+.cta-pass svg { width: 200px; height: 60px; }
