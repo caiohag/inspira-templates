@@ -11,7 +11,8 @@
   position: absolute; inset: 0;
   background-image: url('{{image}}');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-position: {{image_position}};
 }
 .overlay {
   position: absolute; inset: 0;
@@ -25,9 +26,9 @@
 .head {
   position: absolute;
   left: 80px; right: 80px;
-  bottom: 240px;
+  bottom: 220px;
 }
-.head .l1 { display: block; margin-bottom: 28px; }
+.head .l1 { display: block; margin-bottom: 22px; max-width: 900px; }
 .head .l2 { display: block; }
 .cta { position: absolute; right: 80px; bottom: 80px; }
 </style>

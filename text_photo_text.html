@@ -9,20 +9,20 @@
 <style>
 .text-top {
   position: absolute;
-  left: 90px; right: 90px; top: 90px;
+  left: 86px; right: 86px; top: 86px;
 }
 .photo-wrap {
   position: absolute;
-  left: 50%; top: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  height: 540px;
+  left: 50%; top: 388px;
+  transform: translateX(-50%);
+  width: 730px;
+  height: 520px;
 }
 .photo-wrap .photo-card { width: 100%; height: 100%; padding: 24px; }
 .text-bot {
   position: absolute;
-  left: 90px; right: 90px;
-  bottom: 180px;
+  left: 86px; right: 86px;
+  top: 950px;
 }
 .cta { position: absolute; right: 60px; bottom: 30px; }
 .logo-bot {
@@ -40,7 +40,7 @@
   </div>
   <div class="photo-wrap">
     <div class="photo-card">
-      <div class="photo" style="background-image: url('{{image}}');"></div>
+      <div class="photo" style="background-image: url('{{image}}'); background-position: {{image_position}};"></div>
     </div>
   </div>
   <div class="text-bot">

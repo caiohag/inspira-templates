@@ -9,16 +9,16 @@
 <style>
 .photo-wrap {
   position: absolute;
-  left: 50%; top: 130px;
+  left: 50%; top: 108px;
   transform: translateX(-50%);
-  width: 860px;
-  height: 605px;
+  width: 720px;
+  height: 700px;
 }
 .photo-wrap .photo-card { width: 100%; height: 100%; padding: 28px; }
 .text-bot {
   position: absolute;
-  left: 90px; right: 90px;
-  bottom: 240px;
+  left: 86px; right: 86px;
+  top: 850px;
 }
 .logo-bot {
   position: absolute;
@@ -33,7 +33,7 @@
 <div class="canvas stripes-creme">
   <div class="photo-wrap">
     <div class="photo-card">
-      <div class="photo" style="background-image: url('{{image}}');"></div>
+      <div class="photo" style="background-image: url('{{image}}'); background-position: {{image_position}};"></div>
     </div>
   </div>
   <div class="text-bot">

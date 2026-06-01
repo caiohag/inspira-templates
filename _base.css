@@ -44,8 +44,8 @@ html, body {
   background: #fff;
   padding: 24px;
   box-shadow:
-    0 30px 60px -10px rgba(0,0,0,.32),
-    0 12px 30px -8px rgba(0,0,0,.22);
+    0 24px 48px -12px rgba(0,0,0,.28),
+    0 10px 24px -10px rgba(0,0,0,.18);
   transform: rotate(-3deg);
   position: relative;
   display: inline-block;
@@ -67,9 +67,9 @@ html, body {
   line-height: 1;
   letter-spacing: -0.01em;
 }
-.h-1 { font-size: 92px; }
-.h-2 { font-size: 84px; line-height: 1.1; }
-.h-3 { font-size: 72px; line-height: 1.12; }
+.h-1 { font-size: 80px; }
+.h-2 { font-size: 66px; line-height: 1.08; }
+.h-3 { font-size: 58px; line-height: 1.1; }
 .h-white   { color: #fff; }
 .h-pessego { color: var(--pessego); }
 

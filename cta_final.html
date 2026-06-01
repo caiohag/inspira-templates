@@ -9,21 +9,21 @@
 <style>
 .photo-wrap {
   position: absolute;
-  left: 50%; top: 120px;
+  left: 50%; top: 100px;
   transform: translateX(-50%);
-  width: 720px;
-  height: 480px;
+  width: 700px;
+  height: 500px;
 }
 .photo-wrap .photo-card { width: 100%; height: 100%; padding: 22px; }
 .head {
   position: absolute;
   left: 90px; right: 90px;
-  top: 720px;
+  top: 675px;
 }
 .head .l1 {
   display: block;
   font-family: var(--serif);
-  font-size: 88px;
+  font-size: 74px;
   line-height: 1;
   color: var(--vinho);
   margin-bottom: 24px;
@@ -32,14 +32,14 @@
 .head .sub {
   display: block;
   font-family: var(--sans);
-  font-size: 32px;
+  font-size: 29px;
   color: var(--vinho);
   line-height: 1.4;
   font-weight: 400;
 }
 .wpp {
   position: absolute;
-  left: 90px; bottom: 160px;
+  left: 90px; bottom: 155px;
   display: inline-flex;
   align-items: center;
   gap: 16px;
@@ -49,7 +49,7 @@
   border-radius: 999px;
   font-family: var(--sans);
   font-weight: 500;
-  font-size: 30px;
+  font-size: 28px;
 }
 .wpp svg { width: 32px; height: 32px; }
 .logo-bot {
@@ -63,7 +63,7 @@
 <div class="canvas stripes-pessego">
   <div class="photo-wrap">
     <div class="photo-card">
-      <div class="photo" style="background-image: url('{{image}}');"></div>
+      <div class="photo" style="background-image: url('{{image}}'); background-position: {{image_position}};"></div>
     </div>
   </div>
   <div class="head">
