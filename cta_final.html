@@ -32,31 +32,50 @@
 .head .sub {
   display: block;
   font-family: var(--sans);
-  font-size: 32px;
-  color: var(--vinho);
-  line-height: 1.45;
-  font-weight: 400;
+  font-size: 36px;
+  color: #1f1a18;
+  line-height: 1.42;
+  font-weight: 500;
+}
+.wpp-label {
+  position: absolute;
+  left: 86px;
+  bottom: 292px;
+  font-family: var(--sans);
+  font-size: 34px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #111;
 }
 .wpp {
   position: absolute;
-  left: 86px; bottom: 170px;
+  left: 86px; bottom: 188px;
   display: inline-flex;
   align-items: center;
-  gap: 16px;
-  padding: 24px 46px;
+  gap: 15px;
+  padding: 22px 34px;
   background: var(--vinho);
   color: var(--creme);
   border-radius: 999px;
   font-family: var(--sans);
-  font-weight: 500;
-  font-size: 29px;
+  font-weight: 700;
+  font-size: 34px;
 }
-.wpp svg { width: 34px; height: 34px; }
+.wpp .wpp-icon {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #25D366;
+  flex: 0 0 auto;
+}
+.wpp svg { width: 50px; height: 50px; }
 .logo-bot {
   position: absolute;
-  right: 86px; bottom: 128px;
+  right: 86px; bottom: 126px;
 }
-.logo-img-footer { height: 38px; width: auto; display: block; }
+.logo-img-footer { height: 50px; width: auto; display: block; }
 </style>
 </head>
 <body>
@@ -70,10 +89,13 @@
     <span class="l1">{{cta_headline}}</span>
     <span class="sub">{{cta_subtext}}</span>
   </div>
+  <div class="wpp-label">Chama a gente<br>no WhatsApp:</div>
   <div class="wpp">
-    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.23 8.23z"/>
-    </svg>
+    <span class="wpp-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.23 8.23z"/>
+      </svg>
+    </span>
     (11) 92679-7492
   </div>
   <div class="logo-bot">
