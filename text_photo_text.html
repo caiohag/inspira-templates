@@ -9,28 +9,38 @@
 <style>
 .text-top {
   position: absolute;
-  left: 86px; right: 86px; top: 86px;
+  left: 86px; right: 86px; top: 74px;
+}
+.text-top .h-serif {
+  font-size: 70px;
+  line-height: 1.08;
 }
 .photo-wrap {
   position: absolute;
-  left: 50%; top: 388px;
+  left: 50%; top: 344px;
   transform: translateX(-50%);
-  width: 730px;
-  height: 520px;
+  width: 810px;
+  height: 570px;
 }
-.photo-wrap .photo-card { width: 100%; height: 100%; padding: 24px; }
+.photo-wrap .photo-card { width: 100%; height: 100%; padding: 28px; }
 .text-bot {
   position: absolute;
   left: 86px; right: 86px;
-  top: 950px;
+  top: 948px;
+}
+.text-bot .h-serif {
+  font-size: 56px;
+  line-height: 1.15;
+  color: var(--vinho);
+  opacity: .9;
 }
 .cta { position: absolute; right: 60px; bottom: 30px; }
 .logo-bot {
   position: absolute;
-  left: 50%; bottom: 80px;
+  left: 50%; bottom: 78px;
   transform: translateX(-50%);
 }
-.logo-img-footer { height: 32px; width: auto; display: block; }
+.logo-img-footer { height: 38px; width: auto; display: block; }
 </style>
 </head>
 <body>
@@ -44,7 +54,7 @@
     </div>
   </div>
   <div class="text-bot">
-    <span class="h-serif h-3">{{text_bottom}}</span>
+    <span class="h-serif h-4">{{text_bottom}}</span>
   </div>
   <div class="logo-bot">
     <img src="https://frbdhxiwkwjawdifsiya.supabase.co/storage/v1/object/public/imagens/logo-escuro.png" alt="Inspira" class="logo-img-footer" />

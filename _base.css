@@ -44,8 +44,8 @@ html, body {
   background: #fff;
   padding: 24px;
   box-shadow:
-    0 24px 48px -12px rgba(0,0,0,.28),
-    0 10px 24px -10px rgba(0,0,0,.18);
+    0 30px 64px -14px rgba(0,0,0,.34),
+    0 14px 30px -12px rgba(0,0,0,.22);
   transform: rotate(-3deg);
   position: relative;
   display: inline-block;
@@ -67,9 +67,10 @@ html, body {
   line-height: 1;
   letter-spacing: -0.01em;
 }
-.h-1 { font-size: 80px; }
-.h-2 { font-size: 66px; line-height: 1.08; }
-.h-3 { font-size: 58px; line-height: 1.1; }
+.h-1 { font-size: 92px; }
+.h-2 { font-size: 80px; line-height: 1.06; }
+.h-3 { font-size: 68px; line-height: 1.08; }
+.h-4 { font-size: 54px; line-height: 1.16; }
 .h-white   { color: #fff; }
 .h-pessego { color: var(--pessego); }
 
@@ -114,6 +115,6 @@ html, body {
 .cta-pass .lbl {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 28px;
+  font-size: 32px;
 }
-.cta-pass svg { width: 200px; height: 60px; }
+.cta-pass svg { width: 230px; height: 70px; }
